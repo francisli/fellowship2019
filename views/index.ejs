@@ -3,3 +3,15 @@
 <h1 class="mt-3"><img src="/images/devmission.png" style="width: 200px; height: auto;"> Hello world!</h1>
 <p>My name is Francis</p>
 <p>This is only on the homepage</p>
+<ul>
+  <li><a href="/school?name=Gael&lastname=Gil">Click me!</a></li>
+  <li><a href="/school?name=Han%20Middle&lastname=Solo">Click me too!</a></li>
+</ul>
+<form method="get" action="/school">
+  <label for="name">Name (4 to 8 characters):</label>
+  <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+  <label for="lastname">Last Name:</label>
+  <input type="text" id="lastname" name="lastname">
+  <button type="submit">Submit</button>
+</form>

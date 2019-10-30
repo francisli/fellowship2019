@@ -10,7 +10,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/school', function(req, res, next) {
-  res.render('school');
+  console.log(req.query);
+  res.render('school', {
+    name: req.query.name,
+    lastname: req.query.lastname
+  });
 });
 
 router.get('/logout', function(req,res,next){
