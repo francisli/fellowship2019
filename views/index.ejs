@@ -2,6 +2,11 @@
 <%- contentFor('body') %>
 <h1 class="mt-3"><img src="/images/devmission.png" style="width: 200px; height: auto;"> Hello world!</h1>
 <p>My name is Francis</p>
+<ul>
+  <% for (let record of records) { %>
+    <li><%= record.from %> :-) <%= record.title %></li>
+  <% } %>
+</ul>
 <p>This is only on the homepage</p>
 <ul>
   <li><a href="/school?name=Gael&lastname=Gil">Click me!</a></li>

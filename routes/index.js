@@ -6,7 +6,11 @@ const models = require('../models');
 
 
 router.get('/', function(req, res, next) {
-  res.render('index');
+  models.Post.findAll().then(function(records) {
+    res.render('index', {
+      records: records
+    });
+  });
 });
 
 router.get('/school', function(req, res, next) {
