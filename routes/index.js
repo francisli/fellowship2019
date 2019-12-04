@@ -13,6 +13,14 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/posts', function(req, res, next) {
+  models.Post.findByPk(req.query.id).then(function(record) {
+    res.render('post', {
+      record: record
+    });
+  });
+});
+
 router.get('/school', function(req, res, next) {
   console.log(req.query);
   res.render('school', {

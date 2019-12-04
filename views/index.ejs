@@ -4,7 +4,7 @@
 <p>My name is Francis</p>
 <ul>
   <% for (let record of records) { %>
-    <li><%= record.from %> :-) <%= record.title %></li>
+    <li><a href="/posts?id=<%= record.id %>"><%= record.from %> :-) <%= record.title %></a></li>
   <% } %>
 </ul>
 <p>This is only on the homepage</p>
