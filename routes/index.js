@@ -21,6 +21,20 @@ router.get('/posts', function(req, res, next) {
   });
 });
 
+router.get('/new-post', function(req, res, next) {
+  res.render('new-post.ejs');
+});
+
+router.post('/new-post', function(req, res, next) {
+  models.Post.create({
+    from: req.body.from,
+    title: req.body.title,
+    full_text: req.body.full_text
+  }).then(function(record) {
+    res.redirect(`/posts?id=${record.id}`);
+  });
+});
+
 router.get('/school', function(req, res, next) {
   console.log(req.query);
   res.render('school', {

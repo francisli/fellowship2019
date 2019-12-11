@@ -1,0 +1,11 @@
+<%- contentFor('title') %>New Post
+<%- contentFor('body') %>
+<form method="post" action="/new-post">
+  <label for="from">From:</label><br/>
+  <input type="text" id="from" name="from" required><br/>
+  <label for="title">Title:</label><br/>
+  <input type="text" id="title" name="title" required><br/>
+  <label for="full_text">Full text:</label><br/>
+  <textarea id="full_text" name="full_text" rows="8" cols="80"></textarea><br/>
+  <button type="submit">Submit</button>
+</form>
