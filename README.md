@@ -2,6 +2,8 @@
 
 This repository contains a "starter" project for web application development in JavaScript.
 
+HELLO WORLD, THIS IS A CHANGE IN THE README.
+
 ## Getting Started
 
 1. Clone this git repo to a "local" directory (on your computer), then change
@@ -11,7 +13,7 @@ This repository contains a "starter" project for web application development in 
    $ git clone https://github.com/dev-mission/full-stack-starter.git
    $ cd full-stack-starter
    ```
-   
+
    <!-- AFTER SETTING UP, DELETE FROM HERE... -->
 
 1. After cloning, your "local" repo (in this directory on your computer) will be linked to the "remote"
@@ -116,7 +118,7 @@ started again is the ```docker-compose up``` command.
 ## Shell Command Quick Reference
 
  * Every directory and file on your computer has a *path* that describes its location in storage. Special path symbols include:
- 
+
    * The current *working directory* you are in: `.`
    * The *parent* of the current working directory: `..`
    * Your *home* directory: `~`
@@ -133,31 +135,31 @@ started again is the ```docker-compose up``` command.
        * For example, on Mac the same path as the previous example is: `~/Documents`
 
  * To *print the working directory* (i.e. to see the full path of the directory you are currently in):
- 
+
    ```
    $ pwd
    ```
 
  * To *list* the files in the working directory:
- 
+
    ```
    $ ls -l
    ```
 
  * To *change* the working directory:
- 
+
    ```
    $ cd path
    ```
 
  * To *make* a new directory inside the working directory:
- 
+
    ```
    $ mkdir newpath
    ```
 
  * To create a new *empty file* inside the working directory:
- 
+
    ```
    $ touch filename.ext
    ```
@@ -165,37 +167,37 @@ started again is the ```docker-compose up``` command.
 ## git Command Quick Reference
 
  * To check the *status* of the files in your local repo (i.e. what's been added or changed):
- 
+
    ```
    $ git status
    ```
-   
+
  * To *add all* the changed files to the next commit:
- 
+
    ```
    $ git add .
    ```
-   
+
    To *add specific file(s)* to the next commit:
-   
+
    ```
    $ git add path/to/file1.ext path/to/file2.ext path/with/wildcard/*
    ```
-   
+
  * To *commit* the added files with a message:
- 
+
    ```
    $ git commit -m "My description of what's changed"
    ```
-   
+
  * To *push* the commit to the remote repo:
- 
+
    ```
    $ git push
    ```
-   
+
  * To *pull* any new commits from the remote repo:
- 
+
    ```
    $ git pull
    ```
@@ -203,31 +205,31 @@ started again is the ```docker-compose up``` command.
 ## Docker Command Quick Reference
 
  * To start all the containers:
- 
+
    ```
    $ docker-compose up
    ```
-   
+
  * To log in to the running server container:
- 
+
    ```
    $ docker-compose exec server bash -l
    ```
-   
+
  * To stop all the containers, in case things didn't shutdown properly with CTRL-C:
- 
+
    ```
    $ docker-compose stop
    ```
 
  * To run the server container without starting everything using the up command:
- 
+
    ```
    $ docker-compose run --rm server bash -l
    ```
-   
+
  * To re-build the server container:
- 
+
    ```
    $ docker-compose build server
    ```
