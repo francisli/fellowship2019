@@ -1,0 +1,7 @@
+<%- contentFor('title') %>Delete Post
+<%- contentFor('body') %>
+Are you sure you wish to delete the post: <%= record.title %>?
+<form method="post" action="/delete-post?id=<%= record.id %>">
+  <button type="submit" class="btn btn-danger">DELETE</button>
+  <a class="btn btn-default" href="/posts?id=<%= record. %>">Cancel</a>
+</form>

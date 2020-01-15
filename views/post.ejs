@@ -4,4 +4,8 @@
 <p>From: <%= record.from %></p>
 <p><%= record.full_text %></p>
 <p><%= record.media_url %></p>
+<p>
+  <a href="/edit-post?id=<%= record.id %>" class="btn btn-primary">Edit</a>
+  <a href="/delete-post?id=<%= record.id %>" class="btn btn-danger">Delete</a>
+</p>
 <img src="<%= record.media_url %>">

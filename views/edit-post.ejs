@@ -1,0 +1,11 @@
+<%- contentFor('title') %>New Post
+<%- contentFor('body') %>
+<form method="post" action="/edit-post?id=<%= record.id %>">
+  <label for="from">From:</label><br/>
+  <input type="text" id="from" name="from" value="<%= record.from %>" required><br/>
+  <label for="title">Title:</label><br/>
+  <input type="text" id="title" name="title" value="<%= record.title %>" required><br/>
+  <label for="full_text">Full text:</label><br/>
+  <textarea id="full_text" name="full_text" rows="8" cols="80"><%= record.full_text %></textarea><br/>
+  <button type="submit">Submit</button>
+</form>
