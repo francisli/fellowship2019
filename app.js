@@ -18,6 +18,7 @@ var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var adminRouter = require('./routes/admin');
 var apiRouter = require('./routes/api');
+var todoRouter = require('./routes/todos');
 
 var app = express();
 
@@ -67,6 +68,7 @@ app.use('/admin', interceptors.requireLogin);
 app.use('/admin', adminRouter);
 app.use('/api', interceptors.requireLogin);
 app.use('/api', apiRouter);
+app.use('/todo', todoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

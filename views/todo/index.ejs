@@ -1,0 +1,9 @@
+<%- contentFor('title') %>TODOs
+<%- contentFor('body') %>
+<h1>TODOs Page</h1>
+<p><a href="/todo/new">New TODO</a></p>
+<ul>
+  <% for (let record of records) { %>
+    <li><%= record.title %><br><%= record.body %></li>
+  <% } %>
+</ul>
