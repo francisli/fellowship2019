@@ -4,6 +4,6 @@
 <p><a href="/todo/new">New TODO</a></p>
 <ul>
   <% for (let record of records) { %>
-    <li><%= record.title %><br><%= record.body %></li>
+    <li><a href="/todo/<%= record.id %>"><%= record.title %></a><br><%= record.body %></li>
   <% } %>
 </ul>
